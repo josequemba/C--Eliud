@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-class Reference
+public class Reference
 {
     private string _book;
     private int _chapter;

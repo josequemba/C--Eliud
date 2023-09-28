@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
 using System.Linq;
 
-class Scripture
+public class Scripture
 {
     private Reference _references;
     private List<Word> _words = new List<Word>();
@@ -44,6 +44,7 @@ class Scripture
     
     public void HideRandomWords (int numberToHide)
     {
+        WordDisplayer wordDisplayer = new WordDisplayer (_text);
         Word word = new Word (_text);
         string refer2 = reference1.GetDisplayText();
  
@@ -92,7 +93,7 @@ class Scripture
 
                 Console.WriteLine("");
 
-                Console.WriteLine("Press enter to continue or type 'quit' to finish");
+                Console.WriteLine("Press enter to continue, type 'quit' to finish and type 'words' to see the list of words.");
             
                 _quitV = Console.ReadLine();
 
@@ -101,7 +102,12 @@ class Scripture
                 if (_quitV == "quit")
                 {
                     Console.WriteLine("Thanks for your Effort");
-                    break; // Exit the loop when counter reaches 5
+                    break;
+                }
+                else if (_quitV == "words")
+                {
+                    wordDisplayer.ListOfWords();
+                    break;
                 }
             }
             _quitV = "quit";

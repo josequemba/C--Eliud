@@ -3,11 +3,10 @@ using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
 
-class Word
+public class Word
 {
     private string _text;
     private string _patternShown;
-    private bool _isHidden;
 
     public Word ()
     {
