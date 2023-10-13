@@ -1,0 +1,4 @@
+8
+SimpleGoal:frgf,rger,5,False
+EternalGoal:ferf,ergr,9
+ChecklistGoal:fergv,erver,7,500,2,1
