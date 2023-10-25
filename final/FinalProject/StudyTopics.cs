@@ -10,14 +10,22 @@ public class StudyTopics : Portfolio
         _source.Add (source);
     }
 
+    public string GetSource()
+    {
+        foreach (string sour in _source)
+        {
+            return sour;
+        }
+        return "";
+    }
     
     public override string GetStringDetails ()
     {
-        return "";
+        return $"Topic to Study: {GetBooksAndTopics ()} Source: {GetSource()}";
     }
 
     public override string GetStringRepresentation ()
     {
-        return "";
+        return $"StudyTopics:{GetBooksAndTopics ()},{GetSource()}";
     }
 }

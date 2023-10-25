@@ -8,14 +8,19 @@ public class ClassesCompleted : Portfolio
 
     }
 
+    public ClassesCompleted (string classes, float gradeInPercentage, string status, string code, string description, int credits) 
+    : base (classes, gradeInPercentage, status, code, description, credits)
+    {
+
+    }
     
     public override string GetStringDetails ()
     {
-        return "";
+        return $"{GetClassNameIndex ()+1}. | {GetCode ()} - {GetClassName ()} - {GetStatus ()} - Grade: {CalculateGradeLetter(GetGrade ())}  ---- {GetDescription ()} ----  Credits: {GetCredits ()}";
     }
 
     public override string GetStringRepresentation ()
     {
-        return "";
+        return $"ClassesCompleted:{GetCode ()},{GetClassName ()},{GetStatus ()},{GetGrade ()},{GetDescription ()},{GetCredits ()}";
     }
 }

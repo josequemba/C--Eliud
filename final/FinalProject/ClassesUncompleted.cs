@@ -8,14 +8,19 @@ public class ClassesUncompleted : Portfolio
 
     }
 
+    public ClassesUncompleted (string classes, float gradeInPercentage, string status, string code, string description, int credits) 
+    : base (classes, gradeInPercentage, status, code, description, credits)
+    {
+
+    }
     
     public override string GetStringDetails ()
     {
-        return "";
+        return $"{GetCode ()} - {GetClassName ()} - {GetStatus ()} ---- {GetDescription ()} ----";
     }
 
     public override string GetStringRepresentation ()
     {
-        return "";
+        return $"ClassesUncompleted:{GetCode ()},{GetClassName ()},{GetStatus ()},{GetDescription ()}";
     }
 }

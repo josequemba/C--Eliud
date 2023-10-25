@@ -8,15 +8,27 @@ public class CurrentClasses : Portfolio
 
     }
 
+     public CurrentClasses () 
+    : base ()
+    {
+
+    }
+
+    public CurrentClasses (string classes, float gradeInPercentage, string status, string code, string description, int credits) 
+    : base (classes, gradeInPercentage, status, code, description, credits)
+    {
+
+    }
+
     
     public override string GetStringDetails ()
     {
-        return "";
+        return $"{GetClassNameIndex ()+1}. | {GetCode ()} - {GetClassName ()} - {GetStatus ()} - Current Grade: {CalculateGradeLetter(GetGrade ())}  ◄◄◄◄ {GetDescription ()} ►►►►  Credits: {GetCredits ()}";
     }
 
     public override string GetStringRepresentation ()
     {
-        return "";
+        return $"CurrentClasses:{GetCode ()},{GetClassName ()},{GetStatus ()},{GetGrade ()},{GetDescription ()},{GetCredits ()}";
     }
 }
 

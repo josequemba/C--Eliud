@@ -11,11 +11,11 @@ public class WantedBooks : Portfolio
     
     public override string GetStringDetails ()
     {
-        return "";
+        return $"Book: {GetBooksAndTopics ()} Author: {GetAuthor ()} Title: {GetTitle ()} ---- NEED TO BUY ----";;
     }
 
     public override string GetStringRepresentation ()
     {
-        return "";
+        return $"WantedBooks:{GetBooksAndTopics ()},{GetAuthor ()},{GetTitle ()}";
     }
 }

@@ -11,11 +11,11 @@ public class OwnedBook : Portfolio
     
     public override string GetStringDetails ()
     {
-        return "";
+        return $"Book: {GetBooksAndTopics ()} Author: {GetAuthor ()} Title: {GetTitle ()} ---- OWNED ----";
     }
 
     public override string GetStringRepresentation ()
     {
-        return "";
+        return $"OwnedBook:{GetBooksAndTopics ()},{GetAuthor ()},{GetTitle ()}";
     }
 }
