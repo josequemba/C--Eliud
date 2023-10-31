@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 public class ManagePortfolio
 {
-    List<Portfolio> _classes = new List<Portfolio> ();
+    private List<Portfolio> _classes = new List<Portfolio> ();
     private float _gpa;
     private int _statusCredit;
     private int _gpaRequirement = 2;

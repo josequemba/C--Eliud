@@ -6,15 +6,15 @@ public abstract class Portfolio
     private string _major;
     private DateTime _startingDate;
     private DateTime _endDate;
-    List <string> _status = new List<string> ();   
-    List <string> _code = new List<string> ();
-    List <string> _description = new List<string> ();
-    List <string> _title = new List<string> ();                
-    List <string> _author = new List<string> ();                    
-    List <string> _classes = new List <string> ();
-    List <string> _booksAndTopics = new List <string> ();               
-    List <float> _gradeInPercentage = new List <float> ();
-    List <int> _credits = new List <int> ();
+    private List <string> _status = new List<string> ();   
+    private List <string> _code = new List<string> ();
+    private List <string> _description = new List<string> ();
+    private List <string> _title = new List<string> ();                
+    private List <string> _author = new List<string> ();                    
+    private List <string> _classes = new List <string> ();
+    private List <string> _booksAndTopics = new List <string> ();               
+    private List <float> _gradeInPercentage = new List <float> ();
+    private List <int> _credits = new List <int> ();
 
 
     public Portfolio ()

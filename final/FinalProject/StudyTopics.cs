@@ -2,7 +2,7 @@ using System;
 
 public class StudyTopics : Portfolio
 {
-    List <string> _source = new List<string> ();
+    private List <string> _source = new List<string> ();
 
     public StudyTopics (string booksAndTopics, string source) 
     : base (booksAndTopics)
